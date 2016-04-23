@@ -1,0 +1,60 @@
+#containerNov, #containerDec, #containerJan, #containerFeb,  #containerMar,  #containerApr{
+	width: 400px;
+	height: 250px; 
+	margin: 0 auto;
+	float:left;
+}
+
+#spiderWrapper1, #spiderWrapper2 {
+	float: left;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-family: montserrat;
+	font-size: 40px;
+	color: #89C1C1;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 20px;
+}
+
+ul {
+        width:100%;
+        background-color: #89C1C1;
+        height:50px;
+        text-align:center;
+        margin: 0px;
+        padding-left: 0px;
+}
+li {
+        display:inline-block;
+        *display:inline; /*IE7*/
+        *zoom:1; /*IE7*/
+        margin-right:10px;
+}
+
+li a {
+	font-family: karla;
+    display: block;
+    color: black;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: #D16951;
+}
