@@ -11,7 +11,8 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--Javascript -->
-    <script src="js/script.js"></script>
+    <script src="js/scriptMonthly.js"></script>
+    <script src="js/scriptConditions.js"></script>
     <!--  highcharts -->
     <script src="highCharts/js/highcharts.js"></script>
     <script src="highCharts/js/highcharts-more.js"></script>
@@ -19,25 +20,40 @@
 
 <body>
     <h1>SNOW MATTERS</h1>
-
     <ul>
         <li><a href="">Colorado</a></li>
         <li><a href="">Utah</a></li>
         <li><a href="">Vermont</a></li>
         <li><a href="">California</a></li>
     </ul>
+    <button id="showC">Show Conditions</button>
+    <button id="showM">Show Monthly</button>
 
-    <div id="spiderWrapper1">
-        <div id="containerNov"></div>
-        <div id="containerDec"></div>
-        <div id="containerJan"></div>
-    </div>
-    <div id="spiderWrapper2">
-        <div id="containerFeb"></div>
-        <div id="containerMar"></div>
-        <div id="containerApr"></div>
+<!-- monthly -->
+    <div id="spiderMonthly">
+        <div id="spiderWrapper1">
+            <div id="containerNov"></div>
+            <div id="containerDec"></div>
+            <div id="containerJan"></div>
+        </div>
+        <div id="spiderWrapper2">
+            <div id="containerFeb"></div>
+            <div id="containerMar"></div>
+            <div id="containerApr"></div>
+        </div>
     </div>
 
+<!-- conditions -->
+    <div id="spiderConditions">
+        <div id="spiderWrapper1C">
+        <div id="containerSnowC"></div>
+        <div id="containerTemperatureC"></div>
+    </div>
+    <div id="spiderWrapper2C">
+        <div id="containerWindC"></div>
+        <div id="containerVisibilityC"></div>
+    </div>
+</div>
 </body>
 
 </html>

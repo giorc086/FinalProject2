@@ -1,4 +1,15 @@
-$(function () {
+$(document).ready(function(){
+    $("#showC").click(function(){
+        $("div#spiderMonthly").hide();
+        $("div#spiderConditions").show();
+    });
+    $("#showM").click(function(){
+        $("div#spiderMonthly").show();
+        $("div#spiderConditions").hide();
+    });
+});
+
+$(function monthly() {
     Highcharts.setOptions({
     chart: {
         style: {
