@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Snow Matters - California</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--  d3.js -->
+    <script type="text/javascript" src="d3/d3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <!--    favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <div class="navBar">
+          <h6><a href="indexAbout.html">About</a></h6>
+  <h1><a href="index.html">SNOW MATTERS</a></h1>
+    <ul class="topNav">
+        <li class="active"><a href="indexCA.html">California</a></li>
+        <li><a href="indexCO.html">Colorado</a></li>
+        <li><a href="indexUT.html">Utah</a></li>
+        <li><a href="indexVT.html">Vermont</a></li>
+    </ul>
+</div>
+    <h2>Squaw Valley, CA</h2>
+    <img src="img/ltEle.png" height="55">
+     <p class="paragraph"><b>Average Skiing Day Quality</b></p>
+        <div class="chartMonthLake">
+            <li>
+                <div id="chartNovLake">
+                    <p id="text">NOVEMBER</p></div>
+            </li>
+            <li>
+                <div id="chartDecLake">
+                    <p id="text">DECEMBER</p></div>
+            </li>
+            <li>
+                <div id="chartJanLake">
+                    <p id="text">JANUARY</p></div>
+            </li>
+            <li>
+                <div id="chartFebLake">
+                    <p id="text">FEBRUARY</p></div>
+            </li>
+            <li>
+                <div id="chartMarLake">
+                    <p id="text">MARCH</p></div>
+            </li>
+            <li>
+                <div id="chartAprLake">
+                    <p id="text">APRIL</p></div>
+            </li>
+        </div><br>
+         <img src="img/legend.png" height="30">
+        <br>
+        <p class="paragraph"><b>Average Snowfall</b></p>
+        <div id="barChartLake"></div> 
+        <script type="text/javascript" src="js/scriptLake.js"></script>
+</body>
+
+</html>

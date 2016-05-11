@@ -2,7 +2,7 @@ $(function conditions() {
     Highcharts.setOptions({
     chart: {
         style: {
-            fontFamily: 'karla'
+            fontFamily: 'Istok Web'
         }
     }
 });
@@ -19,14 +19,10 @@ $(function conditions() {
             }
         },
         colors: [
-        '#FC2400',
-        '#01410f',
-        '#9EA4AF',
-        '#B2FC05',
-        '#df3555', //pink
-        '#01410f' //dark green
-            // '#ff9c03', //giallo ocra 
-            // '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
 
@@ -41,14 +37,15 @@ $(function conditions() {
         xAxis: {
             categories: ['November', 'December', 'January', 'February','March','April'],
             tickmarkPlacement: 'on',
-            lineWidth: 0
+            lineWidth: 0,
+            allowDecimals: true
         },
 
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
             min: 0,
-            max: 5
+            max: 80
         },
 
         tooltip: {
@@ -58,7 +55,7 @@ $(function conditions() {
 
         legend: {
             title:{
-                text:'SNOW'
+                text:'SNOW (in)'
             },
             align: 'right',
             verticalAlign: 'top',
@@ -68,19 +65,19 @@ $(function conditions() {
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 3.5, 2.5, 5, 4],
+            data: [29, 29, 35, 36, 26, 21],
             pointPlacement: 'on',
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3.5, 5, 2.85, 3, 3, 2],
+            data: [49.7, 60.7, 73, 75, 84.6, 35.8],
             pointPlacement: 'on',            
         }, {
             name: 'Stratton, VT',
-            data: [2.5, 1, 4.85, 5, 3, 2],
+            data: [8.8, 27.9, 33.9, 27.8, 23.3, 5.7],
             pointPlacement: 'on',            
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1, 3, 1],
+            data: [59.5, 76.8, 65.4, 59.2, 54.8, 46.6],
             pointPlacement: 'on',            
         }]
     });
@@ -97,10 +94,10 @@ $('#containerTemperatureC').highcharts({
             }
         },
          colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
         title: {
@@ -114,14 +111,15 @@ $('#containerTemperatureC').highcharts({
         xAxis: {
             categories: ['November', 'December', 'January', 'February','March','April'],
             tickmarkPlacement: 'on',
-            lineWidth: 0
+            lineWidth: 0,
+            allowDecimals: true
         },
 
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
-            min: 0,
-            max: 5
+            min: 10,
+            max: 40
         },
 
         tooltip: {
@@ -131,7 +129,7 @@ $('#containerTemperatureC').highcharts({
 
         legend: {
             title:{
-                text:'TEMPERATURE'
+                text:'TEMPERATURE (°F)'
             },
             align: 'right',
             verticalAlign: 'top',
@@ -141,20 +139,20 @@ $('#containerTemperatureC').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 3.5, 2.5, 2, 2],
+            data: [17.5, 18.8, 15.2, 13.9, 21, 29.5],
             pointPlacement: 'on',
 
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3.5, 5, 2.85, 3, 2, 2],
+            data: [30.9, 33.5, 31.7, 31.7, 34.6, 35.8],
             pointPlacement: 'on',            
         }, {
             name: 'Stratton, VT',
-            data: [2.5, 1, 4.85, 5, 2, 2],
+            data: [19, 23.8, 23.7, 20.7, 25.5, 38.5],
             pointPlacement: 'on',            
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1, 2, 2],
+            data: [21.2, 23.8, 16.9, 22.4, 30.8, 40],
             pointPlacement: 'on',            
         }]
 
@@ -170,10 +168,10 @@ $('#containerWindC').highcharts({
             }
         },
          colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red  
             ],
 
         title: {
@@ -194,7 +192,7 @@ $('#containerWindC').highcharts({
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
             min: 0,
-            max: 5
+            max: 20
 
         },
 
@@ -205,7 +203,7 @@ $('#containerWindC').highcharts({
 
         legend: {
             title:{
-                text:'WIND'
+                text:'WIND (mph)'
             },
             align: 'right',
             verticalAlign: 'top',
@@ -215,19 +213,19 @@ $('#containerWindC').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 6, 2, 2, 2],
+            data: [15, 15, 16, 16, 17, 19],
             pointPlacement: 'on'
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3, 5, 2, 3, 2, 2],
+            data: [2.1, 5.8, 4, 4, 5, 6],
             pointPlacement: 'on'
         }, {
             name: 'Stratton, VT',
-            data: [2, 1, 4, 5, 2, 2],
+            data: [3.5, 5.3, 4, 4.2,4.7, 4.4],
             pointPlacement: 'on'
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1, 2, 2],
+            data: [2, 2, 1, 2, 3, 7],
             pointPlacement: 'on'
         }]
 
@@ -243,10 +241,10 @@ $('#containerVisibilityC').highcharts({
             }
         },
           colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
 
@@ -268,7 +266,7 @@ $('#containerVisibilityC').highcharts({
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
             min: 0,
-            max: 5
+            max: 10
 
         },
 
@@ -279,7 +277,7 @@ $('#containerVisibilityC').highcharts({
 
         legend: {
             title:{
-                text:'VISIBILITY'
+                text:'VISIBILITY (mi)'
             },
             align: 'right',
             verticalAlign: 'top',
@@ -289,20 +287,20 @@ $('#containerVisibilityC').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 6, 2, 3, 3],
+            data: [7, 8,7, 7, 6, 7],
             pointPlacement: 'on',
         
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3, 5, 2, 3, 3, 2],
+            data: [8, 8, 9, 9, 9, 8],
             pointPlacement: 'on'
         }, {
             name: 'Stratton, VT',
-            data: [2, 1, 4, 5, 5, 5],
+            data: [9, 8, 8, 7, 8, 9],
             pointPlacement: 'on'
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1, 3, 2],
+            data: [7, 9, 9, 9, 9, 9],
             pointPlacement: 'on'
         }]
 

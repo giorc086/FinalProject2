@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <!-- responsive stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <meta charset="utf-8">
     <!-- google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Snow Matters</title>
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--Javascript -->
@@ -16,21 +17,32 @@
     <!--  highcharts -->
     <script src="highCharts/js/highcharts.js"></script>
     <script src="highCharts/js/highcharts-more.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
-    <h1>SNOW MATTERS</h1>
-    <ul>
-        <li><a href="">Colorado</a></li>
-        <li><a href="">Utah</a></li>
-        <li><a href="">Vermont</a></li>
-        <li><a href="">California</a></li>
-    </ul>
-    <button id="showC">Show Conditions</button>
-    <button id="showM">Show Monthly</button>
+    
+<div class="navBar">
+     <h6><a href="indexAbout.html">About</a></h6>
+     <h1><a href="index.html">SNOW MATTERS</a></h1>
+
+            <ul class="topNav">
+                <li><a href="indexCA.html">California</a></li>
+                <li><a href="indexCO.html">Colorado</a></li>
+                <li><a href="indexUT.html">Utah</a></li>
+                <li><a href="indexVT.html">Vermont</a></li>
+            </ul>
+</div>
+
+<div align="center">
+    <button id="showC">Show by conditions</button>
+    <button id="showM">Show by month</button>
+</div>
 
 <!-- monthly -->
     <div id="spiderMonthly">
+        <h2>Average Skiing Weather by Month</h2>
+        <p id="subtitle">Results are on a scale from <b>1 - 5</b>, poor to excellent</p>
         <div id="spiderWrapper1">
             <div id="containerNov"></div>
             <div id="containerDec"></div>
@@ -45,6 +57,7 @@
 
 <!-- conditions -->
     <div id="spiderConditions">
+        <h2>Average Skiing Weather by Conditions</h2>
         <div id="spiderWrapper1C">
         <div id="containerSnowC"></div>
         <div id="containerTemperatureC"></div>
@@ -55,5 +68,4 @@
     </div>
 </div>
 </body>
-
 </html>

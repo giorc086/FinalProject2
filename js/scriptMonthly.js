@@ -22,7 +22,7 @@ $(function monthly() {
 
         chart: {
             polar: true,
-            type: 'area'
+            type: 'line'
             //  areaspline or area.
         },
         plotOptions: {
@@ -31,16 +31,10 @@ $(function monthly() {
             }
         },
         colors: [
-        '#FC2400',
-        '#01410f',
-        '#9EA4AF',
-        '#B2FC05'
-
-
-            // '#df3555', //pink
-            // '#01410f', //dark green
-            // '#ff9c03', //giallo ocra 
-            // '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
 
@@ -61,6 +55,7 @@ $(function monthly() {
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
+            max: 5,
             min: 2
         },
 
@@ -81,28 +76,20 @@ $(function monthly() {
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 3.5, 2.5],
+            data: [4, 3, 4, 2],
             pointPlacement: 'on',
-            fillColor: '#FC2400',
-            fillOpacity: 0.7
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3.5, 5, 2.85, 3],
+            data: [5, 4, 4, 5],
             pointPlacement: 'on',            
-            color:  '#01410f',
-            fillOpacity: 0.7
         }, {
             name: 'Stratton, VT',
-            data: [2.5, 1, 4.85, 5],
+            data: [5, 1, 4, 4],
             pointPlacement: 'on',            
-            color:  '##9EA4AF',
-            fillOpacity: 0.7
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1],
+            data: [4, 5, 4, 4],
             pointPlacement: 'on',            
-            color:  '#B2FC05',
-            fillOpacity: 0.7
         }]
     });
 
@@ -110,7 +97,7 @@ $('#containerDec').highcharts({
 
         chart: {
             polar: true,
-            type: 'area'
+            type: 'line'
             //  areaspline or area.
         },
         plotOptions: {
@@ -119,10 +106,10 @@ $('#containerDec').highcharts({
             }
         },
          colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
         title: {
@@ -142,6 +129,7 @@ $('#containerDec').highcharts({
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
+            max: 5,
             min: 2
         },
 
@@ -162,29 +150,20 @@ $('#containerDec').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 3.5, 2.5],
+            data: [4, 3, 4, 2],
             pointPlacement: 'on',
-            fillColor: '#df3555',
-            fillOpacity: 0.7
-
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3.5, 5, 2.85, 3],
+            data: [5, 5, 4, 4],
             pointPlacement: 'on',            
-            color:  '#01410f',
-            fillOpacity: 0.7
         }, {
             name: 'Stratton, VT',
-            data: [2.5, 1, 4.85, 5],
-            pointPlacement: 'on',            
-            color:  '#ff9c03',
-            fillOpacity: 0.7
+            data: [5, 3, 5, 3],
+            pointPlacement: 'on'
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1],
-            pointPlacement: 'on',            
-            color:  '#88b0b0',
-            fillOpacity: 0.7
+            data: [5, 5, 5, 5],
+            pointPlacement: 'on'
         }]
 
     });
@@ -192,7 +171,7 @@ $('#containerJan').highcharts({
 
         chart: {
             polar: true,
-            type: 'area'
+            type: 'line'
             //  areaspline or area.
         },
         plotOptions: {
@@ -201,10 +180,10 @@ $('#containerJan').highcharts({
             }
         },
          colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
         title: {
@@ -224,6 +203,7 @@ $('#containerJan').highcharts({
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
+            max: 5,
             min: 2
 
         },
@@ -245,29 +225,20 @@ $('#containerJan').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 6, 2],
-            pointPlacement: 'on',
-            fillColor: '#df3555',
-            fillOpacity: 0.7
-
+            data: [4, 4, 4, 3],
+            pointPlacement: 'on'
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3, 5, 2, 3],
-            pointPlacement: 'on',            
-            color:  '#01410f',
-            fillOpacity: 0.7
+            data: [5, 5, 4, 4],
+            pointPlacement: 'on'
         }, {
             name: 'Stratton, VT',
-            data: [2, 1, 4, 5],
-            pointPlacement: 'on',            
-            color:  '#ff9c03',
-            fillOpacity: 0.7
+            data: [2, 3, 3, 2],
+            pointPlacement: 'on'
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1],
-            pointPlacement: 'on',            
-            color:  '#88b0b0',
-            fillOpacity: 0.7
+            data: [5, 5, 4, 5],
+            pointPlacement: 'on'
         }]
 
     });
@@ -275,7 +246,7 @@ $('#containerFeb').highcharts({
 
         chart: {
             polar: true,
-            type: 'area'
+            type: 'line'
             //  areaspline or area.
         },
         plotOptions: {
@@ -284,10 +255,10 @@ $('#containerFeb').highcharts({
             }
         },
           colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
 
@@ -308,6 +279,7 @@ $('#containerFeb').highcharts({
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
+            max: 5,
             min: 2
 
         },
@@ -329,29 +301,20 @@ $('#containerFeb').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 6, 2],
-            pointPlacement: 'on',
-            fillColor: '#df3555',
-            fillOpacity: 0.2
-
+            data: [3, 4, 3, 3],
+            pointPlacement: 'on'
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3, 5, 2, 3],
-            pointPlacement: 'on',            
-            color:  '#01410f',
-            fillOpacity: 0.2
+            data: [5, 5, 4, 4],
+            pointPlacement: 'on'
         }, {
             name: 'Stratton, VT',
-            data: [2, 1, 4, 5],
-            pointPlacement: 'on',            
-            color:  '#ff9c03',
-            fillOpacity: 0.2
+            data: [4, 3, 4, 4],
+            pointPlacement: 'on'
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1],
-            pointPlacement: 'on',            
-            color:  '#88b0b0',
-            fillOpacity: 0.7
+            data: [5, 5, 5, 4],
+            pointPlacement: 'on'
         }]
 
     });
@@ -359,7 +322,7 @@ $('#containerMar').highcharts({
 
         chart: {
             polar: true,
-            type: 'area'
+            type: 'line'
             //  areaspline or area.
         },
         plotOptions: {
@@ -368,10 +331,10 @@ $('#containerMar').highcharts({
             }
         },
          colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red  
             ],
 
 
@@ -392,6 +355,7 @@ $('#containerMar').highcharts({
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
+            max: 5,
             min: 2
 
         },
@@ -413,29 +377,20 @@ $('#containerMar').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 6, 2],
-            pointPlacement: 'on',
-            fillColor: '#df3555',
-            fillOpacity: 0.2
-
+            data: [3, 3, 4, 3],
+            pointPlacement: 'on'
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3, 5, 2, 3],
-            pointPlacement: 'on',            
-            color:  '#01410f',
-            fillOpacity: 0.2
+            data: [5, 5, 4, 3],
+            pointPlacement: 'on'
         }, {
             name: 'Stratton, VT',
-            data: [2, 1, 4, 5],
-            pointPlacement: 'on',            
-            color:  '#ff9c03',
-            fillOpacity: 0.2
+            data: [5, 3, 5, 4],
+            pointPlacement: 'on'
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1],
-            pointPlacement: 'on',            
-            color:  '#88b0b0',
-            fillOpacity: 0.7
+            data: [5, 5, 4, 4],
+            pointPlacement: 'on'
         }]
 
     });
@@ -443,7 +398,7 @@ $('#containerApr').highcharts({
 
         chart: {
             polar: true,
-            type: 'area'
+            type: 'line'
             //  areaspline or area.
         },
         plotOptions: {
@@ -452,10 +407,10 @@ $('#containerApr').highcharts({
             }
         },
          colors: [
-            '#df3555', //pink
-            '#01410f', //dark green
-            '#ff9c03', //giallo ocra 
-            '#88b0b0' //azzurro sbiadito
+            '#A7CA8C', //new verde
+            '#6F6DAC', //new viola
+            '#E19D6D', // new orange
+            '#E36E57', //new red 
             ],
 
 
@@ -476,6 +431,7 @@ $('#containerApr').highcharts({
         yAxis: {
             gridLineInterpolation: 'polygon',
             lineWidth: 0,
+            max: 5,
             min: 2
 
         },
@@ -497,29 +453,20 @@ $('#containerApr').highcharts({
 
         series: [{
             name: 'Vail, CO',
-            data: [5, 4, 6, 2],
-            pointPlacement: 'on',
-            fillColor: '#df3555',
-            fillOpacity: 0.8
-
+            data: [4, 3, 4, 2],
+            pointPlacement: 'on'
         }, {
             name: 'Lake Tahoe, CA',
-            data: [3, 5, 2, 3],
-            pointPlacement: 'on',            
-            color:  '#01410f',
-            fillOpacity: 0.2
+            data: [5, 3, 3, 4],
+            pointPlacement: 'on'
         }, {
             name: 'Stratton, VT',
-            data: [2, 1, 4, 5],
-            pointPlacement: 'on',            
-            color:  '#ff9c03',
-            fillOpacity: 0.2
+            data: [5, 1, 3, 4],
+            pointPlacement: 'on'
         }, {
             name: 'Park City, UT',
-            data: [4, 1, 2, 1],
-            pointPlacement: 'on',            
-            color:  '#88b0b0',
-            fillOpacity: 0.7
+            data: [5, 4, 3, 3],
+            pointPlacement: 'on'
         }]
 
     });

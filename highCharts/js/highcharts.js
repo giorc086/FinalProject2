@@ -566,7 +566,7 @@
             borderRadius: 0,
             navigation: { activeColor: "#274b6d", inactiveColor: "#CCC" },
             shadow: !1,
-            itemStyle: { color: "#333333", fontSize: "12px", fontWeight: "bold" },
+            itemStyle: { color: "#333333", fontSize: "12px", fontWeight: "normal" },
             itemHoverStyle: { color: "#000" },
             itemHiddenStyle: { color: "#CCC" },
             itemCheckboxStyle: { position: "absolute", width: "13px", height: "13px" },

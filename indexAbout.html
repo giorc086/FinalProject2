@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <title>Snow Matters - About</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ <!--    favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <div class="navBar">
+        <h6><a href="indexAbout.html">About</a></h6>
+        <h1><a href="index.html">SNOW MATTERS</a></h1>
+        <ul class="topNav">
+            <li><a href="indexCA.html">California</a></li>
+            <li><a href="indexCO.html">Colorado</a></li>
+            <li><a href="indexUT.html">Utah</a></li>
+            <li><a href="indexVT.html">Vermont</a></li>
+        </ul>
+    </div>
+    <h2>About</h2>
+    <p id="leftp">Snow Matters is a project that visualizes historical weather data  in order to understand when a skiing location has the best conditions. Snow Matters strives to become a resource for neutral weather reports that can be trusted and used to make informed decisions about where to go skiing. In this initial prototype the skiing conditions of only four locations are provided but the idea is to continue expanding to every skiing resort in the world.</p>
+     <p id="leftp"><b>Measurements</b>
+        <br>All measurments are using the imperial system. In a future development the option of choosing between imperial and metric will be offered.</p>
+    <p id="leftp"><b>Overview by Month - Radar Charts</b>
+        <br>The radar charts on the first page show the wetaher data by month. The months go from November to April which is the usual skiing season in the US.
+        <br>Data source: <a href="https://www.wunderground.com/">Weather Underground</a></p>
+    <p id="leftp"><b>Overview by Conditions - Radar Charts</b>
+        <br>The radar charts on the first page can also be visualized by conditions. The four main conditions relevant to skiing are: snow, temeprature, visibility and wind. 
+        <br>Data source: <a href="https://www.wunderground.com/">Weather Underground</a></p>
+    <p id="leftp"><b>Average Ski Day Quality - Donut Charts</b>
+        <br> The donut charts below visualize the amount of <b>"good", "ok", and "bad" </b>ski days there are per month. The resuts were achieved by collecting historical weather data from 2010 to 2015. The conditions used to reach the skiability index per month are: temperature, visibility and wind.
+        <br>Data source: <a href="https://www.wunderground.com/">Weather Underground</a></p>
+    <p id="leftp"><b>Average Snowfall - Bar Charts</b>
+        <br>The bar chart below represents the average snowfall per month in Vail, CO.
+        <br>Data source: <a href="https://www.weatherdb.com/">WeatherDB</a></p>
+    <p id="leftp"><b>Technology Used to make Snow Matters</b><br><a href="https://d3js.org/">D3.js</a>, <a href="http://www.highcharts.com/">highcharts.js</a>, <a href="https://nodejs.org/en/">Node.js</a>, <a href="https://www.wunderground.com/weather/api/">Weather Underground API</a></p>
+    <p id="leftp">Project by: <a href="http://www.ceciliagiorcelli.com/">Cecilia Giorcelli</a></p>
+    <script type="text/javascript" src="js/scriptVail.js"></script>
+</body>
+
+</html>

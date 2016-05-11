@@ -1,12 +1,52 @@
+/*D3 CSS Stuff
+*/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+svg {
+  margin-right: 10px;
+  margin-left: 12px;
+}
+
+.bar {
+	fill:#A9C1D9;
+}
+
+.bar:hover {
+  fill: #CACACA ;
+}
+
+  .d3-tip {
+    line-height: 1;
+  	font-family: Istok Web;
+    padding: 12px;
+    background: lightgray;
+    color: black;
+    border-radius: 2px;
+  }
+
+
+/*homepage CSS highharts*/
+#spiderMonthly, #spiderConditions{
+	display:inline-block;
+	text-align: center;
+}
+
 #containerNov, #containerDec, #containerJan, #containerFeb,  #containerMar,  #containerApr{
 	width: 400px;
 	height: 250px; 
 	margin: 0 auto;
-	float:left;
+	display:inline-block;
+	text-align: center;
 }
 
 #spiderWrapper1, #spiderWrapper2 {
-	float: left;
+	display:inline-block;
+	text-align: center;
 	padding-left: 30px;
 	padding-bottom: 20px;
 	padding-top: 20px;
@@ -16,48 +56,130 @@
 	width: 480px;
 	height: 300px; 
 	margin: 0 auto;
-	float:left;
+	display:inline-block;
+	text-align: center;
 	padding-left: 20px;
 }
 
 #spiderWrapper1C, #spiderWrapper2C {
-	float: left;
-	padding-left: 50px;
+	display:inline-block;
+	text-align: center;
+	/*padding-left: 50px;*/
 	padding-bottom: 10px;
 	padding-top: 20px;
 }
 
-/*#spiderConditions {
-	display: none; hides conditions on page load 
-}*/
+#spiderConditions {
+	display: none; 
+}
+
+#chartNovVail, #chartDecVail, #chartJanVail, #chartFebVail, #chartMarVail, #chartAprVail, #chartNovPark, #chartDecPark, #chartJanPark, #chartFebPark, #chartMarPark, #chartAprPark, #chartNovLake, #chartDecLake, #chartJanLake, #chartFebLake, #chartMarLake, #chartAprLake { 
+	margin-left: 10px;
+	
+	}
+
+#barChartPark, #barChartLake, #barChartVail, #barChartStratton {
+	display: block;
+	text-align: center;
+}
+
+
+
+.chartMonthLake, .chartMonthPark, .chartMonthVail, .chartMonthStratton {
+	text-align: center;
+}
+
+
 
 body{
 	margin: 0px;
 	padding: 0px;
+	font-family: Istok Web;
 }
 
-h1 {
-	font-family: montserrat;
-	font-size: 40px;
-	color: #89C1C1;
+p { 
+font-size: 14px;
+}
+
+p#text {
 	text-align: center;
-	margin-bottom: 10px;
-	margin-top: 10px;
+}
+
+p.paragraph {
+	margin-top: 30px;
+	font-size: 18px;
+	text-align: center;
+}
+
+p#leftp {
+	margin-left: 23%;
+	margin-right: 23%;
+}
+
+img {
+	position: relative;
+	left:43%;
+
+}
+
+
+h1 {
+	font-size: 34px;
+	text-align: center;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+
+h1 a {
+	font-family: montserrat;
+	text-decoration: none;
+	color: white;/*#69b7cc*/
 }
 
 h2 {
 	text-align: center;
-	font-size: 20px;
+	font-size: 26px;
 }
 
-ul {
+p#subtitle{
+	margin-top: -20px;
+	font-size: 12pt;
+}
+
+h6 {
+	margin-right:15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding:0px;
+	text-align: right;
+	font-size: 12px;
+}
+
+h6 a{
+	font-family: istok web;
+	text-decoration: none;
+	color: black;
+}
+
+.navBar{
+		height: 90px;
+		padding: 10px;
+		margin-top: 0px;
+	  	background: #69b7cc; /* For browsers that do not support gradients */    
+    	/*background: -webkit-linear-gradient(left, #92B4DB , #0070C0); 
+    	background: -o-linear-gradient(right, #92B4DB, #0070C0); 
+    	background: -moz-linear-gradient(right, #92B4DB, #0070C0); 
+    	background: linear-gradient(to right, #92B4DB, #0070C0); */
+}
+
+/*nav bar text */
+ul.topNav { 
         width:100%;
-        background-color: #89C1C1;
-        height:50px;
         text-align:center;
         margin: 0px;
         padding-left: 0px;
 }
+
 li {
         display:inline-block;
         *display:inline; /*IE7*/
@@ -65,28 +187,39 @@ li {
         margin-right:10px;
 }
 
+
 li a {
-	font-family: karla;
+	font-family: Istok Web;
+	font-size: 16px;
     display: block;
     color: black;
-    padding: 14px 14px;
+	padding: 8px;
     text-decoration: none;
+    margin-left: 10px;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    color: #D16951;
+li a:hover{
+    color: white;
 }
+
+li.active a{
+	color: white;
+}
+
 button {
-	margin-top: 5px;
-	font-family: karla;
-	width: 200px;
+	display:inline-block;
+	text-align: center;
+	margin-top: 10px;
+	font-family: Istok Web;
+	font-size: 13px;
+	width: 170px;
 	background-color: white;
-	border: 2px solid #89C1C1;
+	border: 2px solid #69b7cc;
 }
 
 
 
 button:hover{
-background-color: pink;
+background-color: #92B4DB;
+opacity: 0.6;
 }
